@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<title>MECANICA</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("background.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+<body>
+
+
+<div class="w3-top">
+
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="index.html" class="w3-button w3-block w3-black">ACASA</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="suportCursuri.html" class="w3-button w3-block w3-black">SUPORT CURSURI</a>
+    </div>
+	<div class="w3-col s3">
+      <a href="examene.html" class="w3-button w3-block w3-black">EXAMENE</a>
+    </div>	
+	<div class="w3-col s3">
+      <a href="contact.html" class="w3-button w3-block w3-black">CONTACT</a>
+    </div>
+   
+    
+  </div>
+</div>
+
+
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">MECANICA</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+ 
+  </div>
+</header>
+
+<div class="w3-sand w3-grayscale w3-large">
+
+
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Suport cursuri</span></h5>
+	<p>Primul curs a fost de prezentare a materiei asa ca nu exista nici un pdf curs 1.</p>
+	<br>
+	<br>
+	<a href="Mecanica-Curs-2.pdf" download>-Curs 2 Download</a>
+	<br>
+	<a href="Mecanica-Curs-3.pdf" download>-Curs 3 Download</a>
+	<br>
+	<br>
+	<br>
+	<p>Spor la treaba! :) </p>
+	<br>
+	
+	<p align="center">©ChireaCristianMihail @2019</p>
+  </div>
+</div>
+
+
+
+<script>
+
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
